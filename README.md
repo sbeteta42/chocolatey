@@ -9,7 +9,7 @@ Installer GIT sous votre client Windows
 
 ```bash  
 MKDIR c:\scripts
-git clone https://github.com/sbeteta42/chocolatey/main/chocolatey.git
+git clone https://github.com/sbeteta42/chocolatey
 Expand-Archive -LiteralPath C:\scripts\chocolatey.zip -DestinationPath "C:\scripts\" -Force
 .\install_chocolatey.bat
 .\install_soft_client_windows.bat
