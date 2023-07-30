@@ -5,12 +5,11 @@ Archive zip des scripts d'installation de Chocolatey et installation de logiciel
 CMD et Powershell
 
 # Installation
-- avec CMD (avec les droits administrateur)
+- avec PowerShell (avec les droits administrateur)
 
 ```bash  
 MKDIR c:\scripts
 CD scripts
-wget https://github.com/sbeteta42/chocolatey/chocolatey.zip
-Expand-Archive -LiteralPath C:\scripts\chocolatey.zip -DestinationPath "C:\scripts\" -Force
+wget https://github.com/sbeteta42/chocolatey/archive/refs/heads/main.zip -OutFile "C:\scripts\chocolatey.zip"                             Expand-Archive -LiteralPath C:\scripts\chocolatey.zip -DestinationPath "C:\scripts\" -Force
 .\installChocolatey.cmd
 .\install_soft_client_windows.bat
