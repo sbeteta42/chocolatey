@@ -17,3 +17,4 @@ cd chocolatey-main
 Expand-Archive -LiteralPath C:\scripts\chocolatey-main\chocolatey.zip -DestinationPath "C:\scripts\chocolatey-main" -Force
 cd chocolatey
 .\install_soft_client_windows.bat
+```
