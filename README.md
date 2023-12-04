@@ -8,7 +8,8 @@ CMD et Powershell
 - avec PowerShell (avec les droits administrateur)
 
 ```bash  
-Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')) -ErrorAction Stop
+Set-ExecutionPolicy Bypass -Scope Process -Force
+Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')) -ErrorAction Stop
 powershell choco feature enable -n allowGlobalConfirmation
 MKDIR c:\scripts
 CD \scripts
