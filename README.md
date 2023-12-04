@@ -2,7 +2,7 @@
 Archive zip des scripts d'installation de Chocolatey et installation de logiciels automatisés
 
 # Pre-requis
-CMD et Powershell
+PowerShell et CMD
 
 # Installation
 - Vous devez lancer PowerShell ou Windows Terminal en tant qu'ADMINISTRATEUR ! La méthode recommandée consiste à cliquer avec le bouton droit sur le menu Démarrer et à sélectionner (PowerShell en tant qu'administrateur Windows 10 - Terminal Windows en tant qu'administrateur Windows 11)
