@@ -39,13 +39,15 @@ Il permet d’installer, mettre à jour et désinstaller facilement des applicat
 ---
 
 ## ⚙️ Installation & Usage
-
-```powershell
+l
 # 🛠 Installation classique (PowerShell admin)
+```powershel
 Set-ExecutionPolicy Bypass -Scope Process -Force
 iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-
+```
 # 🚀 Utilisation basique
+```cmd
 choco install <package>
 choco upgrade <package>
 choco uninstall <package>
+```
