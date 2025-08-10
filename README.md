@@ -1,22 +1,51 @@
-# Chocolatey
-Archive zip des scripts d'installation de Chocolatey et installation de logiciels automatisés
+# 🍫 Chocolatey (perso) – Packages & Automation Powerhouse 🚀
 
-# Pre-requis
-PowerShell et CMD
+**Gestionnaire de paquets Windows inspiré de `apt-get`**, rapide à prendre en main, basé sur NuGet et PowerShell. Automation, packaging, installation fluide — tout y est.
 
-# Installation
-- Vous devez lancer PowerShell ou Windows Terminal en tant qu'ADMINISTRATEUR ! La méthode recommandée consiste à cliquer avec le bouton droit sur le menu Démarrer et à sélectionner (PowerShell en tant qu'administrateur Windows 10 - Terminal Windows en tant qu'administrateur Windows 11)
+---
 
-```bash  
+![💻 OS](https://img.shields.io/badge/OS-Windows-blue)  
+![💬 Langage](https://img.shields.io/badge/Language-PowerShell%20%7C%20NuGet-yellow)  
+![✅ Status](https://img.shields.io/badge/Status-Lab%20Ready-success)  
+![📜 Licence](https://img.shields.io/badge/License-Apache%202.0-blue)  
+
+---
+
+## 📑 Table des matières
+1. [📜 Présentation](#-présentation)  
+2. [✨ Fonctionnalités](#-fonctionnalités)  
+3. [⚙️ Installation & Usage](#️-installation--usage)  
+4. [📦 Packaging interne](#-packaging-interne)  
+5. [🔒 Sécurité & précautions](#-sécurité--précautions)  
+6. [🤝 Contribuer](#-contribuer)  
+7. [📄 Licence](#-licence)
+
+---
+
+## 📜 Présentation
+Chocolatey est un **gestionnaire de paquets CLI pour Windows**, s’appuyant sur PowerShell et NuGet.  
+Il permet d’installer, mettre à jour et désinstaller facilement des applications, zips, scripts et exécutables.  
+➡️ [Documentation officielle](https://docs.chocolatey.org/en-us/getting-started)
+
+---
+
+## ✨ Fonctionnalités
+- 📥 **Installation rapide** de logiciels (MSI, EXE, ZIP, scripts)  
+- 🔄 **Mises à jour automatiques** via CLI (`choco upgrade`)  
+- 📦 **Packaging léger** basé sur NuGet  
+- 🛠 **Intégration DevOps** : scripts d’infra & automatisation  
+- 🏢 **Support entreprise** (Pro/Business)
+
+---
+
+## ⚙️ Installation & Usage
+
+```powershell
+# 🛠 Installation classique (PowerShell admin)
 Set-ExecutionPolicy Bypass -Scope Process -Force
-Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')) -ErrorAction Stop
-powershell choco feature enable -n allowGlobalConfirmation
-MKDIR c:\scripts
-CD \scripts
-wget https://github.com/sbeteta42/chocolatey/archive/refs/heads/main.zip -OutFile "C:\scripts\chocolatey.zip"
-Expand-Archive -LiteralPath C:\scripts\chocolatey.zip -DestinationPath "C:\scripts\" -Force
-cd chocolatey-main 
-Expand-Archive -LiteralPath C:\scripts\chocolatey-main\chocolatey.zip -DestinationPath "C:\scripts\chocolatey-main" -Force
-cd chocolatey
-.\install_soft_client_windows.bat
-```
+iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+# 🚀 Utilisation basique
+choco install <package>
+choco upgrade <package>
+choco uninstall <package>
