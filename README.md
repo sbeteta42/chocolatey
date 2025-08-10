@@ -47,7 +47,10 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/in
 # 🚀 Utilisation basique
 ```cmd
 choco install <package>
+```
+```cmd
 choco upgrade <package>
+```
 ```cmd
 choco uninstall <package>
 ```
