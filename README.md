@@ -1,7 +1,6 @@
 # 🍫 Chocolatey (perso) – Packages & Automation Powerhouse 🚀
 
 **Gestionnaire de paquets Windows inspiré de `apt-get`**, rapide à prendre en main, basé sur NuGet et PowerShell. Automation, packaging, installation fluide — tout y est.
-
 ---
 
 ![💻 OS](https://img.shields.io/badge/OS-Windows-blue)  
@@ -49,5 +48,19 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/in
 ```cmd
 choco install <package>
 choco upgrade <package>
+```cmd
 choco uninstall <package>
 ```
+📦 Packaging interne
+💡 Packager tes outils maison en .nupkg permet de maintenir un dépôt interne de scripts et utilitaires déployables facilement dans toute ton infra.
+
+🔒 Sécurité & précautions
+✅ Vérifie toujours le contenu des scripts avant exécution
+
+🔐 Active les checksums/FIPS si nécessaire (choco feature enable)
+
+📌 Utilise des sources fiables (éviter les sources communautaires non vérifiées)
+
+📄 Licence
+Ce projet suit la licence Apache 2.0 — Libre, ouverte et efficace.
+➡️ Plus d’infos sur Chocolatey
